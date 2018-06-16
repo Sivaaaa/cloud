@@ -1,11 +1,6 @@
 # cloud
 * get your own cloud now
 
-Just copy folder and add your cloud directory in index.php. you must then create two directories in your main directory
-  * accueil
-  * corbeille
-Make sure the directory has the desired rights
-
 ### Possibilities
 * View files
 * Copy, Move, Rename, Delete
@@ -14,6 +9,13 @@ Make sure the directory has the desired rights
 * Play music
 * Open PDF files
 * zip or unzip
+
+### install
+
+Just copy folder and add your cloud directory in index.php. you must then create two directories in your main directory
+  * accueil
+  * corbeille
+Make sure the directory has the desired rights
 
 
 After, Enjoy
