@@ -1,0 +1,352 @@
+
+
+
+#trait{ 
+  background: #504e4e;
+}
+
+#case_dir,#case_file, #case_file_allonger{
+	background: #fff;
+}
+
+#img_file{
+  background-color: #333333;
+}
+#case_dir:hover,#case_file:hover,#case_file_allonger:hover,#img_file_allonger:hover{
+	background-color: #1ABC9C;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  background:#DCDCDC;
+  vertical-align: baseline;
+}
+#trait{
+  float: left;
+  width: 94%;
+  height:4px;
+  background-color: #333333;
+  margin: 1% 0 1% 3%;
+  box-shadow:0 0 1px;
+}
+/********************************************************** case dir & file ***********************************/
+
+#case_dir,#case_file, #case_file_allonger{
+	display: inline-block;
+	cursor: pointer;
+	width: 155px;
+	margin: 0.3%;
+  text-align: center;
+}
+#case_file_allonger{
+  width: 48%;
+  text-align: left;
+}
+#img_file{
+  margin: 2px;
+	border-radius: 10px;
+  width: 150px;
+  height: 100px;
+  display:flex;
+  float: left;
+	color:red;
+}
+#case_dir #img_file{
+	width: 35px;
+	height: 35px;
+}
+#case_file_allonger #img_file{
+  width: 25px;
+  height: 25px;
+}
+#case_file p, #case_file_allonger p {   /* img auto */
+	margin: auto;
+	font-size: 40px;
+}
+#case_file_allonger p {
+	font-size: 10px;
+}
+
+#titre_case{
+  width: 145px;
+  padding: 0 5px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#case_dir #titre_case{
+  width: 100px;
+  line-height: 40px;
+}
+#case_file_allonger #titre_case{
+  line-height: 30px;
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/********************************************************** affichage ***********************************/
+
+#file_list, #folder_list{
+  margin: 1%;
+}
+
+#cloud_affichage{
+	position: absolute;
+  overflow-y: hidden;	
+  display: none;
+	width: 67%;
+  height: 90%;
+  top: 5%;
+  left: 15%;
+	background-color: rgba(0,0,0,0.9);	
+	border-radius: 10px 0 10px 10px;
+	z-index: 15;
+}
+#titre_affichage{
+  width: 100%;
+  height:7%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#espace_affichage{
+  position: absolute;
+  overflow-y: scroll; 
+  width: 100%;
+  height:90%;
+  top:7%;
+}
+
+#fleche_next_affichage, #fleche_prec_affichage{
+  position: absolute;
+  right:0;
+  height: 40px;
+  margin: 0px;
+  margin-top: 30px;
+  padding: 20% 0%;
+  background-color: grey;
+  border-radius: 100% 0% 0% 100%;
+  opacity: 0;
+	z-index:2;
+}
+#fleche_next_affichage:hover{
+  opacity: 0.4;
+  box-shadow: -10px 10px 15px;
+}
+#fleche_prec_affichage{
+  left:0px;
+  border-radius: 0px 100% 100% 0px;
+}
+#fleche_prec_affichage:hover{
+  opacity: 0.4;
+  box-shadow: 10px 10px 15px;
+}
+
+
+#titre_liste{
+  position:absolute;
+  top:0;
+  width: 100%;
+  height:30px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+}
+
+#bp_editer{
+
+  float:left;
+  height: 26px;
+  margin-top: 7px;
+	margin-right: 7px;
+  color: rgba(0, 0, 0, .7); 
+	text-align: center;
+  border:0px;
+  background-color:#E6E6E6; 
+  box-shadow: 1px 1px 2px;
+  border-radius: 5px;
+}
+#bp_editer a{
+	color: rgba(0, 0, 0, .7); 
+}
+#bp_editer:hover{
+	background-color: #1ABC9C;
+  -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+       -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+           transform: scale(1.1);
+}
+
+/********************************************************** lecteur ***********************************/
+
+#cloud_music_lecteur{
+	position:absolute; 
+	z-index: 6; 
+	left:10%; 
+	width:80%; 
+	top:0.2%;
+}
+
+.cloud_music_lecteur{
+  top:5px;
+  left: 0%;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0,0,0,0.8);
+  border-radius: 10px;
+
+	
+background: rgba(212,212,212,1);
+background: -moz-linear-gradient(left, rgba(212,212,212,1) 0%, rgba(246,246,246,1) 50%, rgba(246,246,246,1) 85%, rgba(145,145,145,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(212,212,212,1)), color-stop(50%, rgba(246,246,246,1)), color-stop(85%, rgba(246,246,246,1)), color-stop(100%, rgba(145,145,145,1)));
+background: -webkit-linear-gradient(left, rgba(212,212,212,1) 0%, rgba(246,246,246,1) 50%, rgba(246,246,246,1) 85%, rgba(145,145,145,1) 100%);
+background: -o-linear-gradient(left, rgba(212,212,212,1) 0%, rgba(246,246,246,1) 50%, rgba(246,246,246,1) 85%, rgba(145,145,145,1) 100%);
+background: -ms-linear-gradient(left, rgba(212,212,212,1) 0%, rgba(246,246,246,1) 50%, rgba(246,246,246,1) 85%, rgba(145,145,145,1) 100%);
+background: linear-gradient(to right, rgba(212,212,212,1) 0%, rgba(246,246,246,1) 50%, rgba(246,246,246,1) 85%, rgba(145,145,145,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4d4d4', endColorstr='#919191', GradientType=1 );
+}
+
+.cloud_music_lecteur audio{
+  display:block;
+	position: absolute;
+  margin-left:35%; 
+  width:50%;
+  margin-top:2.5px;
+}
+#titre_music_lecteur{
+  position: absolute;
+	overflow-x:scroll;
+	overflow-y:hidden;
+  top: 10px;
+	left:30px;
+  width:30%;
+	line-height:45px;
+  text-align: right;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: black; /* #fff;*/
+	cursor: pointer;
+}
+
+#quitter_element{    /**************************************************** croix *******************************************************************************************/
+  background-color: #BBB;
+  position:absolute;
+  z-index: 3;
+	top:6px;
+	right:6px;
+  height:10px; 
+  width:10px; 
+  border-radius: 100%;
+  opacity: 0.8;
+	cursor: pointer;
+}
+#reduire_element{
+  background-color: #BBB;
+  position:absolute;
+	top:6px;
+	right:34px;
+  height:10px; 
+  width:10px; 
+  border-radius: 100%;
+  opacity: 0.8;
+	cursor: pointer;
+}
+.reduire_element_player{
+  right:20px;
+}
+
+#agrandir_element{
+  background-color: #BBB;
+  position:absolute;
+	top:6px;
+	right:20px;
+  height:10px; 
+  width:10px; 
+  border-radius: 100%;
+  opacity: 0.8;
+	cursor: pointer;
+}
+#quitter_element:hover{
+  background-color: red;
+}
+#reduire_element:hover{
+  background-color: lightblue;
+}
+#agrandir_element:hover{
+  background-color: lightgreen;
+}
+
+#cloud_music_lecteur_icon{
+  display: none;
+}
+#cloud_affichage_icon{
+  display: none;
+}
+#cloud_affichage_icon:hover, #cloud_music_lecteur_icon:hover, #quitter_element:hover, #reduire_element:hover, #agrandir_element:hover{
+	 -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+       -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+           transform: scale(1.2);
+}
+
+
+.ctxmenu    /********************** menu click droit ***********************/
+{
+  position:absolute;   
+  z-index: 6; 
+  min-width: 128px;
+  height:auto;
+  padding: 8px;
+  margin:0;
+	left:0px;
+	top:0px;
+  border: 1px solid #999;
+  background: #F8F8F8;
+  box-shadow: 2px 2px 2px #AAA;
+}
+.ctxmenu p { 
+  display: block;
+  text-decoration: none; 
+  margin: 1px; 
+  padding: 3px 15px; 
+  color: #666;
+  background: #FFF;
+  -webkit-transition: all .3s; 
+  -moz-transition: all .3s; 
+  transition: all .3s; 
+}
+.ctxmenu a {
+  color: #666;
+}
+.ctxmenu p:hover,
+.ctxmenu p:focus {
+  background: #1ABC9C;
+  color: #FFF;
+  padding-left: 30px; 
+}
+
+/***********************************************************************************************************************************************************************/
+
+
+#fileupload
+{  
+	position: absolute;
+	height:80%;
+  left: 40%;
+	top: 10%;
+  display: none;
+  z-index: 10;
+}
