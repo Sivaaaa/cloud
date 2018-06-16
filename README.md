@@ -12,9 +12,10 @@
 
 ### install
 
-Just copy folder and add your cloud directory in index.php. you must then create two directories in your main directory
-  * accueil
-  * corbeille
+Just copy folder and add your cloud directory in index.php. you must then create two directories in your main directory:
+* Accueil
+* Corbeille
+
 Make sure the directory has the desired rights
 
 
