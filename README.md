@@ -9,6 +9,7 @@
 * Play music
 * Open PDF files
 * zip or unzip
+* Upload or Download
 
 ### install
 
