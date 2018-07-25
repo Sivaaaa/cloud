@@ -1,7 +1,7 @@
 # cloud
 * get your own cloud now
 
-### Possibilities
+### use
 * View files
 * Copy, Move, Rename, Delete
 * Edit files
